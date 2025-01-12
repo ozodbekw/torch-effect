@@ -5,8 +5,8 @@ button.addEventListener("click", () => {
   flashlight.classList.toggle("flash");
 });
 
+// flashlight.style.transform = "translate(-50%, -50%)";
 document.body.addEventListener("mouseover", (e) => {
-//   console.log(e);
-  flashlight.style.top = e.screenY + "px";
-  flashlight.style.left = e.screenX + "px";
+  flashlight.style.top = e.clientY + "px";
+  flashlight.style.left = e.clientX + "px";
 });
