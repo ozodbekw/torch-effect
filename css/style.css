@@ -25,7 +25,6 @@ body {
 }
 
 #flashlight {
-  transition: 0.3s;
   position: absolute;
   box-shadow: 0 0 0 9999px #000;
   z-index: -1;

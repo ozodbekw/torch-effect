@@ -10,8 +10,10 @@ button.addEventListener("click", () => {
   }
 });
 
-// flashlight.style.transform = "translate(-50%, -50%)";
-document.body.addEventListener("mouseover", (e) => {
-  flashlight.style.top = e.clientY + "px";
-  flashlight.style.left = e.clientX + "px";
+document.addEventListener("mousemove", (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  flashlight.style.left = `${mouseX - 145}px`;
+  flashlight.style.top = `${mouseY - 145}px`;
 });
